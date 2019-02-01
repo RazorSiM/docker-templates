@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Bitwarden</Name>
+  <Repository>mprasil/bitwarden</Repository>
+  <Registry>https://hub.docker.com/r/mprasil/bitwarden//Dockerfile/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/dani-garcia/bitwarden_rs</Project>
+  <Overview>Bitwarden Web interface (Vault) and Bitwarden-compatible API implementation in Rust.   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container&#xD;
+&#xD;
+To have it working with Chrome and 2FA ( like Authy or Google Authenticator ) you have to enable HTTPS through something like Letsencrypt or Nginx Proxy Manager</Overview>
+  <Category>Backup: Cloud: Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://upload.wikimedia.org/wikipedia/commons/0/03/Bitwarden_Logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1548977593</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Bitwarden Web interface (Vault) and Bitwarden-compatible API implementation in Rust.   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container&#xD;
+&#xD;
+To have it working with Chrome and 2FA ( like Authy or Google Authenticator ) you have to enable HTTPS through something like Letsencrypt or Nginx Proxy Manager</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8343</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>3012</HostPort>
+        <ContainerPort>3012</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/bitwarden/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>true</Value>
+      <Name>SIGNUPS_ALLOWED</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://your.domain.name</Value>
+      <Name>DOMAIN</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="/data" Target="/data" Default="/mnt/user/appdata/bitwarden/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bitwarden/</Config>
+  <Config Name="SIGNUPS_ALLOWED" Target="SIGNUPS_ALLOWED" Default="true" Mode="" Description="This enable signups.&#13;&#10;If you want to disable them, use 'false'" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+  <Config Name="DOMAIN" Target="DOMAIN" Default="https://your.domain.name" Mode="" Description="Set it to your local address if you don't want to reverse proxy to https&#13;&#10;&#13;&#10;Ex: http://192.168.1.2" Type="Variable" Display="always" Required="true" Mask="false">https://your.domain.name</Config>
+  <Config Name="Port 80" Target="80" Default="8343" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">8343</Config>
+  <Config Name="Port 3012" Target="3012" Default="3012" Mode="tcp" Description="Container Port: 3012" Type="Port" Display="always" Required="true" Mask="false">3012</Config>
+</Container>
