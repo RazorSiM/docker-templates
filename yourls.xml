@@ -11,7 +11,6 @@
   <Project/>
   <Overview>YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener.</Overview>
   <Category>Cloud: Tools: Network:Web Network:Other</Category>
-  <Category/>
   <WebUI>http://[IP]:[PORT:80]/admin</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/YOURLS/YOURLS/raw/master/images/yourls-logo.png</Icon>
