@@ -26,3 +26,9 @@ Bitwarden template for unraid, based on https://hub.docker.com/r/mprasil/bitward
 To use it with chrome and its windows/mobile applications, you have to setup a reverse proxy by letsencrypt or Nginx Proxy Manager.
 
 More informations can be found here: https://blog.linuxserver.io/2019/01/15/self-hosting-bitwarden/
+
+## Yourls
+
+Based on the official image: https://hub.docker.com/_/yourls/
+
+You will need something like [Nginx Proxy Manager](https://forums.unraid.net/topic/76460-support-djoss-nginx-proxy-manager/) or Letsencrypt container to create a reverse proxy and use the yourls
