@@ -10,6 +10,7 @@
   <Support>https://hub.docker.com/_/yourls/</Support>
   <Project/>
   <Overview>YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener.</Overview>
+  <Category>Cloud: Tools: Network:Web Network:Other</Category>
   <Category/>
   <WebUI>http://[IP]:[PORT:80]/admin</WebUI>
   <TemplateURL/>
