@@ -84,3 +84,4 @@
   <Config Name="YOURLS_PRIVATE" Target="YOURLS_PRIVATE" Default="true" Mode="" Description="false will set yourls to public. Reccomended value is true ( to be private )" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="YOURLS_USER" Target="YOURLS_USER" Default="admin" Mode="" Description="Yourls admin interface username" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="YOURLS_PASS" Target="YOURLS_PASS" Default="strongpass" Mode="" Description="Yourls admin interface password" Type="Variable" Display="always" Required="true" Mask="true"/>
+</Container>
