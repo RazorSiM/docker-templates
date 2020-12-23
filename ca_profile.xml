@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://github.com/RazorSiM/docker-templates/raw/master/razLogo.png</Icon>
+  <Profile>
+   Random Docker containers template for applications I like.
+  </Profile>
+  <DonateLink>https://paypal.me/simonecolabufalo</DonateLink>
+  <DonateText>If you want to have a beer with me, it's always welcome :)</DonateText>
+  <WebPage>https://raz.works</WebPage>
+  <Discord>https://discord.gg/Mn2Ty3y</Discord>
+</Maintainer>
